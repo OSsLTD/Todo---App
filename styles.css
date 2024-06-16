@@ -64,3 +64,28 @@ h1 {
     cursor: pointer;
     padding: 5px 10px;
 }
+/* Add transitions for a smoother look */
+#taskList li {
+    transition: background 0.3s, transform 0.3s;
+}
+
+#taskList li:hover {
+    background: #f9f9f9;
+    transform: scale(1.02);
+}
+
+/* Style the completed tasks */
+#taskList li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Style the input and button */
+#taskInput, #addTaskButton {
+    transition: all 0.3s;
+}
+
+#taskInput:focus, #addTaskButton:hover {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
