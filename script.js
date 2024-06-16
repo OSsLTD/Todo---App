@@ -247,5 +247,13 @@ function loadTasks() {
         taskList.appendChild(li);
     });
 }
+document.addEventListener('DOMContentLoaded', loadTasks);
+document.getElementById('addTaskButton').addEventListener('click', addTask);
+
+function addTask() {
+    const taskInput = document.getElementById('taskInput');
+    const dueDateInput = document.getElementById('dueDateInput');
+    const categorySelect = document.getElementById('categorySelect');
+    const taskText = taskInput
 
 
